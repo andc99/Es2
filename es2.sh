@@ -8,4 +8,5 @@ if [ $# -eq 2 ] && [$M < 32767]; then
 else
   for (( i=0; i<$N; i++ )); do
     echo $(($RANDOM % $M))
+   done
 fi
