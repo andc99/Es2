@@ -48,8 +48,10 @@ int main(int argc, char * argv[]){
         }
       }
 
+      array[elem]=NULL;
 
-  
+      array=realloc(array, sizeof(char)*(elem));
+
 
       strcat(path, array[0]);
       errno=0;
