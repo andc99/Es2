@@ -21,6 +21,7 @@ int main(int argc, char * argv[]){
   char *buf;
   char **array=malloc(sizeof(char*)*MAXARR);
   int ex=0;
+  // Meglio usare strncmp
   while(1){
     fgets(s,MAX,stdin);
     s[strlen(s)-1]='\0';
